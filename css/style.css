@@ -1,68 +1,62 @@
-:root{
-  --cor-fundo: linear-gradient(180deg, #08308b, #44b46c);
+*{
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #323232;
+  border: none;
 }
 
-.corpo{
-  background: linear-gradient(45deg,#08308b, #44b46c, #08308b,#44b46c);
+input, label{
+  display: block;
+  width: 100%;
+}
+
+input:focus, label:focus{
+  outline: none;
+}
+
+a{
+  color: #e60084;
+}
+
+body{
+  padding-top: 5vh; /*Unidade de medida chamada view height
+   -> 5% da tela*/
+   background-image: url(../img/bg.jpg);
+   background-size: cover;
+   background-position-y: -75px;
+   backface-visibility: hidden;
+}
+
+/*form*/
+#main-container{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+#main-container h1{
   text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem; /*adaptada ao elemento root*/
 }
 
-.container{
+form{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #29071481;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.container2{
-  width: 375px;
-  height: 375px;
-  background: linear-gradient(45deg,#08308b, #44b46c);
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: none;
+.full-box{
+  flex: 1 1 100%;
+  position: relative;
 }
 
-.containerFilho{
-  width: 350px;
-  height: 350px;
-  background-color: #0d1c3f;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: none;
-}
-
-input{
-  border: none;
-  width: 100%;
-  height: 30px;
-  background-color: rgb(238, 240, 208);
-}
-
-input:focus{
-  background-color: rgb(182, 225, 240);
-}
-
-button{
-  width: 50%;
-  height: 40%;
-  margin: 30px;
-  padding: 7px;
-  background-color: rgb(182, 225, 240);
-  border-radius: 20px;
-  border: none;
-}
-
-footer{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  border: 1px solid #f5c8d2;
+.half-box{
+  flex: 1 1 45%;
+  position: relative;
 }

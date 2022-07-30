@@ -13,25 +13,52 @@
    <header>
    <nav></nav>
   </header>
-  <main>
-    <section class="container">
 
-      <section class="container2">
+  <div id="main-container">
 
-        <section class="containerFilho">
-          <h1>Login</h1>
+    <h1>Cadastre-se</h1>
+    <form id="register-form">
 
-          <form>
-            <label for="name">Usuario:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="senha">Senha:</label><br>
-            <input type="password" id="senha" name="senha">
-            <button>Entrar</button>
-          </form>
-        </section>
-      </section>
-    </section>
-  </main>
+      <div class="full-box">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+      </div>
+
+      <div class="half-box spacing">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" placeholder="Digite seu nome">
+      </div>
+
+      <div class="half-box">
+        <label for="lastname">Sobrenome:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome">
+      </div>
+
+      <div class="half-box spacing">
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+      </div>
+
+      <div class="half-box">
+        <label for="passconfirmation">Confirme a senha:</label>
+        <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua senha">
+      </div>
+
+      <div class="full-box">
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">Eu li e aceito os <strong><a href="#">termos de uso</a></strong></label>
+      </div>
+
+      <div class="full-box">
+        <input type="submit" id="btn-submit" value="Cadastrar">
+      </div>
+
+    </form>
+
+  </div>
+
+  <p class="error-validation template"></p>
+
   <footer>
     @jadiellylima, Front End Developer.
     Fortaleza-Ce, 2022.
